@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  margin: 0;
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  list-style-type: none;
+}
+
+a:not([class]) {
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.container {
+  max-width: 1070px;
+  margin: 0 auto;
+}
+
+.header {
+  display: block;
+  width: 100%;
+  padding: 38px 20px 48px 20px;
+  background: rgba(255, 113, 67, 0.27);
+}
+
+.header .header__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header__item .navigation .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .header__item .navigation .nav__list .nav__li {
+  color: aqua;
+}
+
+.header .header__item .navigation .nav__list .nav__li:not(:first-of-type) {
+  margin-left: 49px;
+}
+
+.header .header__item .navigation .nav__list .nav__link {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.468947;
+  color: #696871;
+  text-decoration: none;
+}
+
+.header .header__item .knopka {
+  background: #FF7143;
+  border-radius: 10px;
+  padding: 19px 60px;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+.header .header__item .knopka .knopka__link {
+  text-decoration: none;
+  color: white;
+}
+
+.header .header__item .knopka:hover {
+  background: #fa7a4f;
+}
+
+.button {
+  color: white;
+  height: 60px;
+  width: 212px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 22px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__titel {
+  max-width: 467px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 77px;
+  color: #000;
+}
+
+.about__text {
+  max-width: 410px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #696871;
+}
+
+.button__violet {
+  background: #5454d4;
+}
+
+.button__none {
+  background: none;
+  border: 1px solid #5454d4;
+  color: #5454d4;
+  margin-left: 35px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 38px 20px 38px 20px;
+  background: rgba(255, 113, 67, 0.27);
+}
+
+.footer .navigation .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .navigation .nav__list .nav__li {
+  color: aqua;
+}
+
+.footer .navigation .nav__list .nav__li:not(:first-of-type) {
+  margin-left: 49px;
+}
+
+.footer .navigation .nav__list .nav__link {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.468947;
+  color: #696871;
+  text-decoration: none;
+}
+
+.footer a {
+  margin: 0 15px;
+}

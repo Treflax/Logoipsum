@@ -1,0 +1,232 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    margin: 0;
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+// /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+
+ul[class],
+ol[class] {
+    list-style: none;
+    list-style-type: none;
+}
+
+// /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+
+a:not([class]) {
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+}
+
+// /* Упрощаем работу с изображениями */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+// /* Указываем понятную периодичность в потоке данных у article*/
+
+article > * + * {
+    margin-top: 1em;
+}
+
+// /* Наследуем шрифты для инпутов и кнопок */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+// /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+
+@media (prefers-reduced-motion: reduce) {
+* {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+}
+}
+
+// container
+
+.container {
+    max-width: 1070px;
+    margin: 0 auto;
+}
+
+// header
+
+.header {
+    display: block;
+    width: 100%;
+    padding: 38px 20px 48px 20px;
+    background: rgba(255, 113, 67, 0.27);
+    
+    .header__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .navigation {
+            .nav__list {
+                display: flex;
+                
+                .nav__li {
+                    color: aqua;
+                }
+
+                .nav__li:not(:first-of-type) {
+                    margin-left: 49px;
+                }
+
+                .nav__link {
+                    font-weight: bold;
+                    font-size: 15px;
+                    line-height: 20px;
+                    letter-spacing: -0.468947;
+                    color: #696871;
+                    text-decoration: none;
+                }
+            }
+        }
+        .knopka {
+            background: #FF7143;
+            border-radius: 10px;
+            padding: 19px 60px;
+            font-weight: bold;
+            line-height: 22px;
+
+            .knopka__link {
+                text-decoration: none;
+                color: white;
+
+            }
+        }
+
+        .knopka:hover {
+            background: #fa7a4f;  
+        }
+    }  
+}
+
+.button {
+    color: white;
+    height: 60px;
+    width: 212px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__titel {
+    max-width: 467px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 77px;
+    color: #000;
+}
+
+.about__text {
+    max-width: 410px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #696871;
+}
+
+.button__violet {
+    background: #5454d4;
+}
+
+.button__none {
+    background: none;
+    border: 1px solid #5454d4;
+    color: #5454d4;
+    margin-left: 35px;
+}
+
+// footer
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 38px 20px 38px 20px;
+    background: rgba(255, 113, 67, 0.27);
+
+    .navigation {
+        .nav__list {
+            display: flex;
+            
+            .nav__li {
+                color: aqua;
+            }
+
+            .nav__li:not(:first-of-type) {
+                margin-left: 49px;
+            }
+
+            .nav__link {
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 20px;
+                letter-spacing: -0.468947;
+                color: #696871;
+                text-decoration: none;
+            }
+        }
+    }
+    a {
+        margin: 0 15px;
+    }
+}
