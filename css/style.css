@@ -165,6 +165,7 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 85px;
 }
 
 .main__titel {
@@ -195,6 +196,170 @@ select {
   margin-left: 35px;
 }
 
+.subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 85px;
+}
+
+.subscribe .subscribe__title, .subscribe  h2 {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 57px;
+  letter-spacing: -1.56316px;
+  color: #19191B;
+  margin-bottom: 38px;
+}
+
+.subscribe .input {
+  height: 60px;
+  width: 307px;
+  border-radius: 10px;
+  border: 1px solid #7087FF;
+  padding-left: 14px;
+  margin-right: 39px;
+}
+
+.subscribe .input::-webkit-input-placeholder .input {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.531474px;
+  color: #000000;
+}
+
+.subscribe .input:-ms-input-placeholder .input {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.531474px;
+  color: #000000;
+}
+
+.subscribe .input::-ms-input-placeholder .input {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.531474px;
+  color: #000000;
+}
+
+.subscribe .input::placeholder .input {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.531474px;
+  color: #000000;
+}
+
+.subscribe .input:focus {
+  outline: none;
+}
+
+.check__list {
+  margin-bottom: 132px;
+}
+
+.check__list .list__titel {
+  max-width: 504px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 70px;
+  margin-bottom: 110px;
+  letter-spacing: -1.87579px;
+  color: #19191B;
+}
+
+.check__list .list__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.check__list .list__flex .list__item {
+  width: 330px;
+  background: #F8F8F8;
+  text-align: center;
+  border-radius: 10px;
+  padding: 34px 0 27px;
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+.check__list .list__flex .list__item .list__item-text {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.562737;
+  color: #696871;
+}
+
+.check__list .list__flex .list__item .list__item-titel {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 56px;
+  text-align: center;
+  letter-spacing: -1.03448px;
+  color: #1D293F;
+  margin: 22px 0 28px;
+}
+
+.check__list .list__flex .list__item .list__item-titel span {
+  font-size: 28px;
+}
+
+.check__list .list__flex .list__item .list__item-li {
+  list-style: none;
+  font-size: 17px;
+  line-height: 50px;
+  letter-spacing: -0.531474px;
+  color: #696871;
+}
+
+.check__list .list__flex .list__item .button__list__item {
+  width: 282px;
+  background: white;
+  color: #5454d4;
+}
+
+.check__list .list__item:hover {
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+  background: #FF7143;
+  -webkit-box-shadow: 0px 32px 34px rgba(255, 112, 59, 0.317827);
+          box-shadow: 0px 32px 34px rgba(255, 112, 59, 0.317827);
+}
+
+.check__list .list__item:hover .list__item-text,
+.check__list .list__item:hover .list__item-titel,
+.check__list .list__item:hover .list__item-li {
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+  color: white;
+}
+
+.check__list .list__item:hover .button__list__item {
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+  color: white;
+  background: #9F3919;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,10 +381,6 @@ select {
   display: flex;
 }
 
-.footer .navigation .nav__list .nav__li {
-  color: aqua;
-}
-
 .footer .navigation .nav__list .nav__li:not(:first-of-type) {
   margin-left: 49px;
 }
@@ -233,6 +394,6 @@ select {
   text-decoration: none;
 }
 
-.footer a {
+.footer .navigation .nav__list .nav__link a {
   margin: 0 15px;
 }
